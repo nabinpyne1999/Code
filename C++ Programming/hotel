@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+class hotel
+{
+	private:
+		int rno,nod;
+		char name[50];
+		double tariff;
+		double calc()
+		{
+			float a,b;
+			{
+			a=nod*tariff;
+			if(a>=10000)
+			{
+				a=1.05*nod*tariff;
+			}
+		    }
+		    cout<<"Total Bill Amount : "<<a;
+		}
+	public:
+		void checkin()
+		{
+			cout<<"\nEnter the customer name: ";
+	    	cin>>name;
+			cout<<"\nEnter the room number: ";
+			cin>>rno;
+			cout<<"\nEnter per day charges: ";
+			cin>>tariff;
+			cout<<"\nEnter the number of days to stay: ";
+			cin>>nod;
+		}
+		void checkout()
+		{
+			cout<<"customer name: "<<name<<endl;
+			cout<<"room number: "<<rno<<endl;
+			cout<<"day charges: "<<tariff<<endl;
+			cout<<"number of days to stay: "<<nod<<endl;
+			calc();
+		}
+};
+int main()
+{
+	hotel t;
+	t.checkin();
+	t.checkout();
+}
