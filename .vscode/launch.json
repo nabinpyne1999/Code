@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch divisible_number",
+            "request": "launch",
+            "mainClass": "divisible_number",
+            "projectName": "Code_85ea5e3a"
+        },
+        {
             "name": "Launch",
             "type": "cppvsdbg",
             "request": "launch",

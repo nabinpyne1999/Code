@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.project.sourcePaths": [
+			"JAVA Programming/java",
+			"JAVA Programming/main/src/main/java/com/company2"
+		]
+	}
 }
